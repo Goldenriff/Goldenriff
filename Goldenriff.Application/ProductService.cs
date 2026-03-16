@@ -20,6 +20,7 @@ namespace Goldenriff.Application
                 .Where(p => !p.IsDeleted && p.IsActive)
                 .Select(p => new ProductListDto
                 {
+                    Id = p.Id,
                     Name = p.Name,
                     Price = p.Price,
                     ThumbnailUrl = p.ThumbnailUrl,
